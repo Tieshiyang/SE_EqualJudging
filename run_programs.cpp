@@ -3,10 +3,10 @@
 #include <iostream>
 #include "tool.h"
 using namespace std;
-ProgramsRunor::ProgramsRunor(string OJPath,vector <string> ProgramPaths){
+ProgramsRunor::ProgramsRunor(string OJPath,vector <string> ProgramPaths,string indir_name,string outdir_name){
     oj_path= OJPath;
-    output_path = replace_all(OJPath,"input","outputs");
-    system("mkdir outputs");
+    output_path = replace_all(OJPath,indir_name,outdir_name);
+    system(("mkdir "+outdir_name).c_str);
     system(("mkdir "+output_path).c_str());
     for(int i = 0;i < ProgramPaths.size();i++){
         //CPPName  = a.cpp
