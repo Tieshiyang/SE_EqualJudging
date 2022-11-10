@@ -1,3 +1,6 @@
+#ifndef JUDGE_H
+#define JUDGE_H
+
 #include "tool.h"
 #include "OutputModule.h"
 using namespace std;
@@ -16,3 +19,5 @@ public:
     DSU_FileOutput judge_and_output(string equal_path,string inequal_path,string abnormal_path);
 
 };
+
+#endif
