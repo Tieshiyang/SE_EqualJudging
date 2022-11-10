@@ -33,6 +33,7 @@ void InputsCreator::generate_inputs(string inputs_path){
 		cout << "Open outfile Fail" << endl;
 		return;
 	}
+	//set time as the seed
 	srand((unsigned)time(0));
 	char chars[26+26];
 	int i, j, k, n;
