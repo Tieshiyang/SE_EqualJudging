@@ -5,11 +5,13 @@
 
 using namespace std;
 
-Judger::Judger(vector<string>paths){
+Judger::Judger(vector<string>paths,string indir_name,string outdir_name){
     FileNum = paths.size();
     ProgramPaths = paths;
+    input_dir_name =indir_name;
+    output_dir_name = outdir_name;
     for(int i = 0;i<FileNum;i++){
-        string outspath =replace_all(paths[i],"input","outputs");
+        string outspath =replace_all(paths[i],indir_name,outdir_name);
         outspath = replace_all(outspath,".cpp","_out.txt");
         OutpusPaths.push_back(outspath);
     }

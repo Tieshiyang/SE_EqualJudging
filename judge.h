@@ -11,9 +11,11 @@ private:
     vector <string> ProgramPaths;
     vector <string> OutpusPaths;
     DSU_FileOutput dsu_files;
+    string input_dir_name;
+    string output_dir_name;
 public:
     Judger()=default;
-    Judger(vector<string>paths);
+    Judger(vector<string>paths,string indir_name,string outdir_name);
     ~Judger(){cout<<"~Judger"<<endl;};
     // send to cequre
     DSU_FileOutput judge_and_output(string equal_path,string inequal_path,string abnormal_path);
