@@ -11,7 +11,7 @@ class InputModule
 {
 private:
    int oj_num;
-   vector <vector<string>> file_nams;
+   vector <vector<string>> file_names;
     vector <string> oj_names;
 public:
     InputModule()=default;
