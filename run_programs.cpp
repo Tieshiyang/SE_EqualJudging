@@ -8,7 +8,7 @@ ProgramsRunor::ProgramsRunor(string OJPath,vector <string> ProgramPaths,string i
     input_dir_name = indir_name;
     output_dir_name = outdir_name;
     output_path = replace_all(OJPath,indir_name,outdir_name);
-    system(("mkdir "+outdir_name).c_str);
+    system(("mkdir "+outdir_name).c_str());
     system(("mkdir "+output_path).c_str());
     for(int i = 0;i < ProgramPaths.size();i++){
         //CPPName  = a.cpp
