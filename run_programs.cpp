@@ -5,6 +5,8 @@
 using namespace std;
 ProgramsRunor::ProgramsRunor(string OJPath,vector <string> ProgramPaths,string indir_name,string outdir_name){
     oj_path= OJPath;
+    input_dir_name = indir_name;
+    output_dir_name = outdir_name;
     output_path = replace_all(OJPath,indir_name,outdir_name);
     system(("mkdir "+outdir_name).c_str);
     system(("mkdir "+output_path).c_str());
