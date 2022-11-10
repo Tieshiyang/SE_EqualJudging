@@ -11,7 +11,7 @@
 int main(){
 //----------------------prepare files--------------------
     string indir_name = "input";
-    string outdir_name = "outputs";
+    string outdir_name = "program_outputs";
    system("mkdir output");
     ofstream eql_path = ofstream("output/equal.csv");
     ofstream ineql_path = ofstream("output/inequal.csv");
